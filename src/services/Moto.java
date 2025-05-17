@@ -1,22 +1,22 @@
 package services;
 
 public final class Moto extends Veiculo{
-    private String tipoDeGasolina;
+    private String tipoDeCombustivel;
 
-    public Moto(String modelo, String placa, String ano, double precoDiaria, String tipoDeGasolina) {
+    public Moto(String modelo, String placa, String ano, double precoDiaria, String tipoDeCombustivel) {
         super(modelo, placa, ano, precoDiaria);
-        setTipoDeGasolina(tipoDeGasolina);
+        setTipoDeCombustivel(tipoDeCombustivel);
     }
 
-    public String getTipoDeGasolina() {
-        return tipoDeGasolina;
+    public String getTipoDeCombustivel() {
+        return tipoDeCombustivel;
     }
 
-    public void setTipoDeGasolina(String tipoDeGasolina) {
-        if(tipoDeGasolina == null || tipoDeGasolina.trim().isEmpty()) {
+    public void setTipoDeCombustivel(String tipoDeCombustivel) {
+        if(tipoDeCombustivel == null || tipoDeCombustivel.trim().isEmpty()) {
             System.out.println("O tipo de gasolina não pode ser nulo ou vazio.");
         } else {
-            this.tipoDeGasolina = tipoDeGasolina;
+            this.tipoDeCombustivel = tipoDeCombustivel;
         }
     }
 
@@ -27,7 +27,7 @@ public final class Moto extends Veiculo{
                             "\n     Placa: " + placa +
                             "\n     Ano: " + ano +
                             "\n     Preço da diária: " + precoDiaria +
-                            "\n     Tipo de gasolina: " + tipoDeGasolina +
+                            "\n     Tipo de combustivel: " + tipoDeCombustivel +
                             "\n }\n");
     }
 
