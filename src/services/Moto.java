@@ -28,10 +28,11 @@ public final class Moto extends Veiculo{
     }
 
     @Override
-    public double calcularCusto(int dias) {
+    public void calcularCusto(int dias) {
         if (dias > 5){
-            return  precoDiaria * dias * 0.97;
+            System.out.println("Custo total de "+ dias + " dia(s): " + (precoDiaria * dias * 0.97));
+        }else{
+            System.out.println("Custo total de "+ dias + " dia(s): " + (precoDiaria * dias));
         }
-        return precoDiaria * dias;
     }
 }

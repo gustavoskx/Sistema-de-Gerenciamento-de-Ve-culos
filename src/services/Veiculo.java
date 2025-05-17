@@ -62,5 +62,5 @@ public abstract class Veiculo {
     }
 
     public abstract void mostrarDados();
-    public abstract double calcularCusto(int dias);
+    public abstract void calcularCusto(int dias);
 }
