@@ -13,7 +13,11 @@ public final class Moto extends Veiculo{
     }
 
     public void setTipoDeGasolina(String tipoDeGasolina) {
-        this.tipoDeGasolina = tipoDeGasolina;
+        if(tipoDeGasolina == null || tipoDeGasolina.trim().isEmpty()) {
+            System.out.println("O tipo de gasolina não pode ser nulo ou vazio.");
+        } else {
+            this.tipoDeGasolina = tipoDeGasolina;
+        }
     }
 
     @Override

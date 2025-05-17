@@ -14,5 +14,11 @@ public class Main {
         Moto moto = new Moto("Honda", "XYZ-5678", "2020", 50.0, "Gasolina");
         moto.mostrarDados();
         moto.calcularCusto(12);
+
+        System.out.println();
+
+        Carro carro2 = new Carro("Civic", "DEF-5678", "2020", 150.0, 4);
+        carro2.mostrarDados();
+        carro2.calcularCusto(3);
     }
 }

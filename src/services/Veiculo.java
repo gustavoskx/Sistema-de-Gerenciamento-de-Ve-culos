@@ -18,7 +18,7 @@ public abstract class Veiculo {
     }
 
     public void setModelo(String modelo) {
-        if(modelo == null || modelo.isEmpty()) {
+        if(modelo == null || modelo.trim().isEmpty()) {
             System.out.println("O modelo não pode ser nulo ou vazio.");
         } else {
             this.modelo = modelo;
@@ -30,7 +30,7 @@ public abstract class Veiculo {
     }
 
     public void setPlaca(String placa) {
-        if(placa == null || placa.isEmpty()) {
+        if(placa == null || placa.trim().isEmpty()) {
             System.out.println("A placa não pode ser nula ou vazia.");
         } else {
             this.placa = placa;
@@ -42,7 +42,7 @@ public abstract class Veiculo {
     }
 
     public void setAno(String ano) {
-        if (ano == null || ano.isEmpty()) {
+        if (ano == null || ano.trim().isEmpty()) {
             System.out.println("O ano não pode ser nulo ou vazio.");
         } else {
             this.ano = ano;

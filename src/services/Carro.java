@@ -13,10 +13,10 @@ public final class Carro extends Veiculo{
     }
 
     public void setNumeroPortas(int numeroPortas) {
-        if(numeroPortas > 0 && numeroPortas < 6) {
+        if(numeroPortas > 0 && numeroPortas <= 6) {
             this.numeroPortas = numeroPortas;
         } else {
-            System.out.println("O número de portas deve ser entre 1 e 5.");
+            System.out.println("O número de portas deve ser entre 1 e 6.");
         }
     }
 
