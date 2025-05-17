@@ -54,10 +54,10 @@ public abstract class Veiculo {
     }
 
     public void setPrecoDiaria(double precoDiaria) {
-        if (precoDiaria <= 0) {
-            System.out.println("O preço da diária deve ser maior que zero.");
-        } else {
+        if (precoDiaria > 0) {
             this.precoDiaria = precoDiaria;
+        } else {
+            System.out.println("O preço da diária deve ser maior que zero.");
         }
     }
 

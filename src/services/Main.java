@@ -7,11 +7,10 @@ public class Main {
 
         Carro carro = new Carro("Fusca", "ABC-1234", "1970", 100.0, 2);
         carro.mostrarDados();
-        System.out.println("Custo para 5 dias: " + carro.calcularCusto(11) + "\n");
+        System.out.println("Custo para 12 dias: " + carro.calcularCusto(12) + "\n");
 
         Moto moto = new Moto("Honda", "XYZ-5678", "2020", 50.0, "Gasolina");
         moto.mostrarDados();
-        System.out.println("Custo para 3 dias: " + moto.calcularCusto(6) + "\n");
-
+        System.out.println("Custo para 3 dias: " + moto.calcularCusto(3) + "\n");
     }
 }
